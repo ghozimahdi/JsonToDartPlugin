@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.ghozimahdi.jsontodart</id>
+    <name>Json to Dart</name>
+
+    <vendor email="support@ghozimahdi.com" url="https://www.ghozimahdi.com">GhoziMahdi</vendor>
+
+    <description><![CDATA[
+        Plugin ini membantu mengonversi JSON menjadi Dart data class secara otomatis.<br>
+        <ul>
+            <li>Konversi JSON ke Dart</li>
+            <li>Dukungan untuk Freezed dan JsonSerializable</li>
+            <li>Integrasi dengan IntelliJ & Android Studio</li>
+        </ul>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.jetbrains.kotlin</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+
+    </extensions>
+
+    <actions>
+        <action id="com.ghozimahdi.jsontodart.ConvertJson"
+                class="com.ghozimahdi.jsontodart.JsonToDartAction"
+                text="Convert JSON to Dart"
+                description="Converts selected JSON into Dart data class">
+            <add-to-group group-id="NewGroup" anchor="first"/>
+        </action>
+    </actions>
+</idea-plugin>
