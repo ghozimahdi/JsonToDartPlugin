@@ -1,4 +1,4 @@
-package com.ghozimahdi.jsontodart
+package com.ghozimahdi.jsontodart.ui
 
 import com.google.gson.JsonElement
 
